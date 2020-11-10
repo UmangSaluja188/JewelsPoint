@@ -1,0 +1,765 @@
+* {
+    font-family:'"Cormorant Garamond",Georgia,"Times New Roman",serif'
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+ul {
+    padding-left: 0px;
+    margin-bottom: 0px !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h6 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffb401;
+    margin-top: 30px;
+   
+}
+a.ripples:hover {
+    background: linear-gradient(40deg,#D19102,#FFD165);
+}
+.ScrollTop {
+    position: fixed;
+    bottom: 800px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-radius: 50%;
+    background-position: center;
+    cursor: pointer;
+    z-index: 100000;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-image: url('../Images_Folder/slideUp.png');
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.ScrollTop.active {
+    visibility: visible;
+    opacity: 1;
+    bottom: 30px;
+}
+
+.header-container {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 100000;
+    transition: 0.6s;
+}
+
+.main-header .header-top {
+    position: relative;
+    display: block;
+    padding: 30px 0px 5px;
+}
+
+
+
+.main-header .header-top ul li {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.main-header .header-top ul li:last-child,
+.lowerHeader ul li:last-child {
+    margin-right: 0px;
+}
+
+.main-header .header-top ul li a, .info li {
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: normal;
+}
+
+
+
+.main-header .header-top .top-left ul li i {
+    margin-right: 10px;
+    font-size: 14px !important;
+}
+
+.header-top .social-links {
+    margin: 0px 0px;
+}
+
+.social-links {
+    text-align: right;
+    margin: 15px 0px;
+}
+
+.social-links li {
+    position: relative;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.bg-dark {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.main-header .header-top .top-right .social-links li:last-child, .footer-section .social-links li:last-child {
+    margin-right: 0px;
+}
+
+.fab {
+    font-size: 17px !important;
+    line-height: 20px !important;
+}
+
+
+
+header.lowerHeader {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nopad {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.logo img{max-width: 84px;width: 100%;}
+
+header.lowerHeader ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    float: right;
+}
+
+header.lowerHeader ul li {
+    position: relative;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+header.lowerHeader ul li a {
+    position: relative;
+
+    color: #ffffff !important;
+    font-weight: 500;
+
+    text-decoration: none !important;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    transition: .5s;
+}
+
+header.lowerHeader ul li a:before {
+    content: '';
+    position: absolute;
+    border-bottom: 3px solid #fff;
+    transition: .6s;
+    width: 0px;
+    height: 5px;
+    left: 0px;
+    top: 100%;
+}
+
+header.lowerHeader ul li:hover a:before {
+    width: 50% !important;
+    transform: translateX(100%) !important;
+}
+
+header.sticky ul li a:hover {
+    color: #ff2c57;
+}
+
+.header-container.sticky {
+    background-color: #000 !important;
+}
+
+header.newClass .bg-dark {
+    background-color: transparent !important;
+}
+
+header.sticky ul li a {
+    color: #000;
+}
+
+header.sticky .logo {
+    color: #000;
+}
+
+.toggle {
+    padding: 10px 0px;
+    background: #000;
+    width: 100%;
+    box-sizing: border-box;
+    color: #fff;
+    display: none;
+}
+
+.bars {
+    display: none;
+}
+
+.Banner {
+    padding: 200px 0px 100px;
+    background-image: linear-gradient(92deg, #272534 0%, rgba(242, 41, 91, 0) 80%), url('../Images_Folder/Banner-Img.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+   /* transition: background 0.3s, opacity 0.3s;*/
+    background-position: center;
+    position: relative;
+}
+
+
+
+h3 {
+    font-size: 3rem;
+    line-height: 4.6rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.Banner a,
+.About-Section a,
+.Contact-us a {
+    display: inline-block;
+    padding: 12px 36px;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    background: linear-gradient(90deg,#D1913C,#FFD194);
+    color: #fff;border-radius: 40px;overflow:hidden;
+}
+
+.categories {
+    padding: 30px 0px 50px;
+    background: #fff;
+}
+
+.categoriesContainer {
+    position: relative;
+    max-width: 290px;
+    width: 100%;
+    height: 300px;
+    background: #fff;
+    overflow: hidden;
+    margin: 0px 40px;
+    float: left;
+}
+
+.categoriesContainer .imgBox img {
+    height: 400px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.categoriesContainer .imgBox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.categoriesContainer .categoriesContent {
+    transform: perspective(600px) rotateY(90deg);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: #1d304c;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    transform-origin: left;
+    transition: .3s;
+}
+
+.categoriesContent h3 {
+    margin: 10px 0px;
+    padding: 0;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.categories .categoriesContent p {
+    margin: 0px;
+    padding: 0;
+    color: #fff;
+    text-align: left;
+}
+
+.categoriesContainer:hover .categoriesContent {
+    transform: rotateY(0deg);
+    background: #d2aa5c;
+}
+
+.categories p,
+.Works-Section p {
+    color: #000;
+    text-align: center;
+}
+
+.categoriesContainer:hover .imgBox {
+    transition: rotateY(0deg) translateX(50%);
+    opacity: 0.5;
+}
+
+.categories h6 {
+    text-align: center;
+}
+
+.flexBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.social-links li a {color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: normal;
+    display: block;
+    position: relative;
+    width: 30px;
+    background-color: #d2aa5c;
+    height: 30px;
+    box-shadow: 0 5px 4px rgba(0,0,0,.8);
+    border-radius: 50%;
+    text-align: CENTER;
+    transition: .6s;}.social-links li a i.fab {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}.social-links li a:hover{transform: translate(0,-10px);background: linear-gradient(40deg,#D19102,#FFD165);}
+.CollectioNSection a {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    background-color: #d2aa5c;
+    color: #fff;
+}
+
+
+.CollectioNSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+    background: #fff;
+}
+
+.clip-container {
+    position: relative;
+    max-width: 525px;
+    background: #fff;
+    width: 100%;
+    height: 500px;
+    margin: 0px auto;
+    float: left;
+}
+
+.clip-container .clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+
+}
+
+.clip-container .clip.clip1 {
+    clip-path: polygon(0 0%, 56% 0, 23% 100%, 0% 100%);
+    background-color: #f00;
+    background: url('../Images_Folder/banner3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.clip-container .clip.clip2 {
+    clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+    background-color: #0f0;
+    background: url('../Images_Folder/image5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.clip-container .clip.clip3 {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+    background-color: #00f;
+    background: url('../Images_Folder/image14.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+}
+
+
+.clip-container:hover .clip {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.clip-container .clip:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.clip-content {
+    position: absolute;
+    bottom: -100%;
+    opacity: 0;
+    left: 0;
+    width: 70%;
+    padding: 20px;
+    color: #fff;
+    transition: 0.5s;
+    background: rgba(0, 0, 0, .4);
+}
+
+.clip-container .clip:hover .clip-content {
+    bottom: 0;
+    opacity: 1;
+}
+
+h5 {
+    font-size: 2.5rem;
+    line-height: 3.9rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.About-Section h3,.CollectioNSection h3,
+.FeatureSlider h3, .categories h3, .Works-Section h3
+ {
+    color: #000;margin-bottom: 50px; font-weight: normal;
+}
+
+.clip-content p {
+    color: #fff !important;
+    text-align: left !important;
+}
+
+
+
+.contentContainer {
+    max-width: 374px;
+    width: 100%;
+    background-color: #000;
+    float: left;
+    padding: 100px 20px;
+}
+
+.footer-section p {
+    margin: 16px 0px;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    font-weight: normal;color:#000;
+}
+
+.footer-section .social-links li a {
+    color: #fff;
+}
+
+.footer-section .social-links {
+    margin: 0px;
+}
+
+.footer-section .social-links li {
+    padding: 8px 0px;
+}
+
+.contentContainer:hover {
+    background: #d2aa5c;
+}
+
+.CollectioNSection .contentContainer:hover a {
+    border: 1px solid #fff;
+}
+
+.aboutRightContent {
+    padding-left: 20px;
+}
+
+.About-Section h2 {
+    color: #000;
+    font-size: 4rem;
+    line-height: 4.6rem;
+    text-align: left;
+    padding-top: 50px;
+}
+ .aboutRightContent p, .clip-content p, .categoriesContent p{
+    font-size: 2rem;
+    padding-top: 20px;
+    line-height: 3rem;
+    color: #a3a2a2;
+}
+.three-col-text p {font-size: 1.5rem;
+    padding-top: 20px;
+    line-height: 3rem;
+    color: #a3a2a2;}
+.About-Section {
+    padding: 50px 0px;
+    background: #fff;
+}
+
+.Works-Section {
+    padding: 20px 0px 30px;
+    background-color: #fff;
+}
+
+.three-col-box {
+    width: 31%;
+    margin: 0 auto;
+}
+.three-col-image{
+   text-align: center;
+}
+.three-col-image img{
+    max-width: 80px;
+    width: 100%;
+    margin: 0 auto;text-align: center;
+}
+.three-col-text h3{
+    font-size: 1.9rem;
+    padding-top: 20px;
+    line-height: 2.6rem;
+    color: #d2aa5c;text-align: center;    margin: 0px !important;
+}
+
+
+.clip-content h3{color:#fff;margin: 0px;}
+.swiper-container {
+    width: 100%;
+    height: 300px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* max-width: 100%;*/
+    height: 300px;
+    /* Center slide text vertically */
+
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table-cell;
+}
+
+.swiper-slide-image {
+    max-width: 100%;
+    width: 100%;
+    height: 300px;
+    /* position: relative;*/
+    filter: grayscale(1)
+}
+
+.FeatureSlider {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 0px 80px;
+}
+
+.swiper-slide-image:hover {
+    filter: grayscale(0);
+}
+
+.Contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0px;
+    background-image: url(../Images_Folder/contact3.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+.main{height: 100%;} .inner {
+  min-height: 100%;
+}
+.Contact-Us-Content {
+    text-align: center;
+    max-width: 900px;
+    width: 100%;
+    border: 3px solid #fff;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.footer-section {
+    padding: 20px 0px;
+}
+
+@media only screen and (min-device-width : 992px) and (max-device-width : 1024px) {
+    .categoriesContainer {
+        margin: 0px 30px;
+    }
+}
+
+@media(max-width: 991px) {
+    .flexBox {
+        flex-direction: column;
+    }
+
+    .categoriesContainer {
+        margin-bottom: 40px;
+    }
+
+    .categoriesContainer:nth-child(3) {
+        margin-bottom: 0px;
+    }
+
+    .three-col-box {
+        width: 50%
+    }
+
+    .clip-container {
+        float: none;
+    }
+
+    .categories {
+        padding: 10px 0px;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 991px) {
+    .info li {
+        margin-right: 8px !important;
+    }
+
+    header.lowerHeader ul li {
+        margin-right: 17px;
+    }
+}
+
+@media(max-width: 767px) {
+    html {
+        font-size: 55%
+    }
+
+    .bg-dark {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .bars {
+        display: block;
+        font-size: 30px;
+        float: right;
+        color: #fff;
+    }
+
+    .hide {
+        display: hidden;
+    }
+
+
+    .main-header .header-top {
+        padding: 20px 0px 10px;
+    }
+
+    header.newClass {
+        top: 0px !important;
+    }
+
+    .social-links {
+        text-align: center !important;
+        margin-top: 15px !important;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .floatNone {
+        float: none !important
+    }
+
+    .menu ul {
+        float: none !important;
+        display: block !important;
+    }
+
+    .menu ul li {
+        display: block;
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    header.lowerHeader ul li a {
+        margin: 0px !important
+    }
+
+    .product .itemBox {
+        max-width: 100%;
+    }
+
+    .Works-Section {
+        padding: 0px 0px 30px;
+    }
+
+    .three-col-box {
+        width: 100%;
+    }
+
+    .About-Section {
+        padding: 20px 0px;
+    }.Contact-us{padding: 50px 0px;}.FeatureSlider{padding: 0px 0px 60px;}.About-Section h3, .CollectioNSection h3, .FeatureSlider h3, .categories h3, .Works-Section h3{margin-bottom: 25px;}h6{margin:20px 0px;}
+}
+
+@media(max-width: 480px) {
+    .main-header .header-top ul.info li {
+        margin-right: 0px;
+        display: block;
+        list-style-type: none;
+        padding: 3px 0px;
+    }.categoriesContainer{max-width: 90%}
+}

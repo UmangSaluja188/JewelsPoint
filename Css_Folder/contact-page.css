@@ -1,0 +1,313 @@
+* {
+    font-family: '"Cormorant Garamond",Georgia,"Times New Roman",serif'
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+ul {
+    padding-left: 0px;
+    margin-bottom: 0px !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+.Banner {
+    padding: 200px 0px 150px;
+    background-image: linear-gradient(92deg, #272534 0%, rgba(242, 41, 91, 0) 80%), url('../Images_Folder/image14.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    /* transition: background 0.3s, opacity 0.3s;*/
+    background-position: center;
+    position: relative;
+}
+
+h6 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-top: 30px;
+
+}
+
+h3 {
+    font-size: 4rem;
+    line-height: 4.6rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+p {
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.Banner a {
+    display: block;
+    width: 142px;
+    margin: 0 auto;
+    padding: 12px 36px;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    background: linear-gradient(90deg, #D1913C, #FFD194);
+    color: #fff;
+    border-radius: 40px;
+    position: relative;
+}
+
+.flexBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.three-col-box {
+    width: 31%;
+    margin: 0 auto;
+}
+.three-col-image{text-align: center;}
+.three-col-image img{
+    max-width: 80px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.outer-container {
+    position: absolute;
+    bottom: -250px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.three-col-text h3 {
+    font-size: 1.9rem;
+    padding-top: 20px;
+    line-height: 2.6rem;
+    color: #d2aa5c;
+    text-align: center;
+    margin: 0px;
+}
+
+.three-col-text p {
+    font-size: 1.3rem;
+    padding-top: 10px;
+    line-height: 2.0rem;
+    color: #a3a2a2;
+    text-align: center;
+}
+
+/* form css*/
+.formDiv {
+    position: relative;
+    padding: 10px 0px;
+}
+
+
+
+
+
+
+label {
+    width: auto !important;
+    color: #212242 !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    text-align: left !important;
+    font-weight: normal !important;
+}
+
+input[type=text],
+input[type=url],
+input[type=email],
+input[type=tel],
+input[type=number],
+input[type=date],
+textarea,
+select {
+    border: 1px solid #cbced4 !important;
+    border-radius: 5px !important;
+    padding: 10px !important;
+    height: 45px !important;
+    color: #a3a2a2 !important;
+    font-size: 16px !important;
+    font-weight: normal !important;
+    width: 100% !important;
+    margin: 6px 0px !important;
+}
+
+input[type=text]:focus,
+input[type=url]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=number]:focus,
+input[type=date]:focus,
+textarea:focus,
+select:focus {
+    background-color: #fff;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+    background: linear-gradient(90deg, #D1913C, #FFD194);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    cursor: pointer;
+    opacity: 0.9;
+    border: none;
+    outline: none;
+    transition: all 1s ease;display: block;margin:8px auto;width:141px;    border-radius: 100px;
+}
+
+.registerbtn:hover {
+    opacity: 1; background: linear-gradient(40deg,#D19102,#FFD165);
+}
+
+.social-links li a {color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: normal;
+    display: block;
+    position: relative;
+    width: 30px;
+    background-color: #d2aa5c;
+    height: 30px;
+    box-shadow: 0 5px 4px rgba(0,0,0,.8);
+    border-radius: 50%;
+    text-align: CENTER;color:#fff;
+    transition: .6s;}.social-links li a i.fab {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}.social-links li a:hover{transform: translate(0,-10px);background: linear-gradient(40deg,#D19102,#FFD165);}
+
+.footer-section p,
+.formclass p {
+    color: #a3a2a2;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    margin: 10px 0px;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.formclass p{
+
+    text-align: center;
+}
+
+.footer-section {
+    padding: 30px 0px;
+}
+
+.Form-section h3 {
+    color: #000;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 700px;
+    width: 100%;
+}
+
+.Form-section {
+    padding: 100px 0px 0px;
+}
+.header-top .social-links {
+    margin: 0px 0px;
+}
+
+.social-links {
+    text-align: right;
+    margin: 15px 0px;
+}
+
+.social-links li {
+    position: relative;
+    display: inline-block;
+    margin-right: 25px;
+}
+.main-header .header-top .top-right .social-links li:last-child {
+    margin-right: 0px;
+}
+
+.fab {
+    font-size: 17px !important;
+    line-height: 20px !important;
+}
+
+
+
+
+@media(max-width: 767px) {
+    html {
+        font-size: 55%
+    }
+.outer-container{padding: 0px;}
+    .Form-section {
+        padding: 70px 0px 40px;
+    }
+
+    .flexBox {
+        flex-direction: column;
+    }
+
+   .social-links, .center{text-align:center;}
+    .Banner {
+        padding: 60px 0px 50px;
+    }
+
+    .outer-container {
+        position: relative;
+        width: 50%;
+        bottom: 0px;
+        margin: 0 auto;
+        background: transparent;
+    }
+
+    .three-col-box {
+        width: 80%;
+        margin: 20px auto;
+        background-color: #fff;
+    }
+.footer-section{padding: 0px 0px 60px;}
+ form{max-width: 100%;width: 80%;}
+
+.three-col-image{padding-top: 15px;}
+
+}
+
+@media(max-width: 480px) {
+
+
+    .outer-container {
+        width: 100%;
+    }
+}
